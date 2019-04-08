@@ -25,7 +25,7 @@ npm install --save-dev gulp-purgecss
 
 ## Usage
 
-By default, `purgecss` outputs the source CSS _with unused selectors removed_.
+By default, `purgecss` outputs the source CSS _with unused selectors removed_:
 
 ```js
 const gulp = require('gulp')
@@ -34,7 +34,7 @@ const purgecss = require('gulp-purgecss')
 gulp.task('purgecss', () => {
     return gulp.src('src/**/*.css')
         .pipe(purgecss({
-            content: ["src/**/*.html"]
+            content: ['src/**/*.html']
         }))
         .pipe(gulp.dest('build/css'))
 })
@@ -53,7 +53,7 @@ gulp.task('purgecss', () => {
             suffix: '.rejected'
         })
         .pipe(purgecss({
-            content: ["src/**/*.html"],
+            content: ['src/**/*.html'],
             rejected: true
         }))
         .pipe(gulp.dest('build/css'))
