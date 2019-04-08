@@ -47,7 +47,7 @@ const gulp = require('gulp')
 const rename = require('gulp-rename')
 const purgecss = require('gulp-purgecss')
 
-gulp.task('purgecss', () => {
+gulp.task('purgecss-rejected', () => {
     return gulp.src('src/**/*.css')
         .pipe(rename({
             suffix: '.rejected'
