@@ -10,6 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-purgecss": "^1.0.0"
+    "gulp-purgecss": "^2.0.3"
   }
 }
